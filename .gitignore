@@ -6,7 +6,8 @@ __pycache__/
 # PyTorch checkpoints and logs
 *.pt
 *.pth
-checkpoints/
+checkpoints/*
+!checkpoints/best_model.pth
 logs/
 outputs/
 runs/
