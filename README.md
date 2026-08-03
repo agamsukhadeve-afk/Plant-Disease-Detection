@@ -31,11 +31,9 @@ Leveraging **Transfer Learning** with an **EfficientNet-B0** architecture, the m
 ---
 
 ## 📸 Demo
-<div align="center">
-  <img src="https://via.placeholder.com/800x450.png?text=Streamlit+App+Demo+GIF+or+Screenshot" alt="Streamlit App Demo">
-  <br>
-  <em>(Replace with actual demo GIF/Screenshot)</em>
-</div>
+**To test the application interactively, run the Streamlit Web App. It will be hosted at:**
+- 🏠 **Local URL:** [http://localhost:8501](http://localhost:8501)
+- 🌐 **Network URL:** [http://10.145.54.50:8501](http://10.145.54.50:8501)
 
 ---
 
