@@ -208,10 +208,8 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ---
 
 ## 📫 Contact
-**Your Name**  
-- [LinkedIn](https://linkedin.com/in/yourprofile)  
-- [GitHub](https://github.com/yourusername)  
-- [Portfolio](https://yourportfolio.com)
+**Agam Sukhadeve**  
+- [LinkedIn](https://www.linkedin.com/in/agam-sukhadeve-8386ab323/)
 
 ---
 <div align="center">
