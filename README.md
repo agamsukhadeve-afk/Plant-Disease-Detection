@@ -183,9 +183,7 @@ To ensure the model is making decisions based on actual disease markers (and not
 The Streamlit app automatically generates a heatmap over the uploaded leaf image, highlighting the precise pixels the EfficientNet-B0 model focused on.
 
 <div align="center">
-  <img src="https://via.placeholder.com/600x300.png?text=Grad-CAM+Before+and+After+Comparison" alt="Grad-CAM XAI">
-  <br>
-  <em>(Replace with Grad-CAM visual output)</em>
+  <img src="assets/gradcam.png" alt="Grad-CAM XAI" width="800">
 </div>
 
 ---
