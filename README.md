@@ -165,11 +165,7 @@ The model achieved highly competitive results on the completely unseen 10% Test 
 | **Precision** | `98.10%` |
 | **Recall** | `98.06%` |
 
-<div align="center">
-  <img src="https://via.placeholder.com/500x400.png?text=Confusion+Matrix+Plot" alt="Confusion Matrix">
-  <br>
-  <em>(Replace with `logs/confusion_matrix.png`)</em>
-</div>
+
 
 ---
 
