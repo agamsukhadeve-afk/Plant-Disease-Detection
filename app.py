@@ -5,8 +5,11 @@ except ImportError:
     import subprocess
     import sys
     # grad-cam forces opencv-python which breaks on Streamlit Cloud due to missing libglib2.0
-    # We uninstall it so python falls back to the opencv-python-headless we provided in requirements
+    # Uninstalling it deletes the cv2 folder entirely, so we must force-reinstall headless right after.
     subprocess.run([sys.executable, "-m", "pip", "uninstall", "-y", "opencv-python", "opencv-contrib-python"])
+    subprocess.run([sys.executable, "-m", "pip", "install", "opencv-python-headless", "--force-reinstall"])
+    if 'cv2' in sys.modules:
+        del sys.modules['cv2']
     import cv2
 import numpy as np
 from PIL import Image
