@@ -1,5 +1,13 @@
 import streamlit as st
-import cv2
+try:
+    import cv2
+except ImportError:
+    import subprocess
+    import sys
+    # grad-cam forces opencv-python which breaks on Streamlit Cloud due to missing libglib2.0
+    # We uninstall it so python falls back to the opencv-python-headless we provided in requirements
+    subprocess.run([sys.executable, "-m", "pip", "uninstall", "-y", "opencv-python", "opencv-contrib-python"])
+    import cv2
 import numpy as np
 from PIL import Image
 import time
@@ -44,7 +52,7 @@ def main():
         col1, col2 = st.columns(2)
         
         with col1:
-            st.image(rgb_image, caption="Uploaded Image", use_column_width=True)
+            st.image(rgb_image, caption="Uploaded Image", use_container_width=True)
             
         if st.button("Predict Disease"):
             with st.spinner("Analyzing image..."):
@@ -60,7 +68,7 @@ def main():
                 inference_time = end_time - start_time
                 
             with col2:
-                st.image(heatmap_img, caption="Grad-CAM Heatmap (Model Focus)", use_column_width=True)
+                st.image(heatmap_img, caption="Grad-CAM Heatmap (Model Focus)", use_container_width=True)
                 
             st.success(f"Inference complete in {inference_time:.2f} seconds.")
             
